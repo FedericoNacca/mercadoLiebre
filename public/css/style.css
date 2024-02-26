@@ -1,0 +1,215 @@
+*{          /*Haciendo el general del articulo*/ 
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'roboto';
+    }
+
+.header{
+    background-color:#EAC926; /*Poniendo color al header*/
+    margin-bottom: 0px;
+}
+
+.encabezado{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.burger-menu {  /*Haciendo el menu burguer*/
+    text-align: center;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    width: 30px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.container i { /*Haciendo al icono de mano */
+    margin-right: 10px;
+}
+
+.iconos-footer{ /*Haciendo a los iconos del footer*/
+    text-align: center;
+    color: blue;
+    line-height: 5px;
+    margin: 0px;
+}
+
+.footer{ /*Haciendo general footer*/
+    text-align: center;  
+}
+
+img{ /*Poniendo maximo a las imagenes*/
+    width: 100%;
+}
+
+
+footer ul p { /*Haciendo footer los parrafos*/
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.roboto-thin { /*Llamando al roboto de google*/
+    font-family: "Roboto", sans-serif; 
+    font-weight: 100;
+    font-style: normal;
+    }
+
+main{  /*Haciendo general al main*/
+    width: 90%;
+    text-align: center;
+}
+
+.articulo{  /*Haciendo general el articulo*/
+    margin: 10px;
+    border: 15px solid #ebebeb;
+}
+
+.datosDelArticulo > .logoCamion{  /*Haciendo al camion*/
+display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+right: 20px;
+top: -15px;
+color: green;
+}
+
+.datosDelArticulo {
+    position: relative;
+    }
+
+section article .off {  /*Haciendo verde a la oferta*/
+    color:green;
+    
+}
+
+section article .datosDelArticulo { /*Haciendo los datos*/
+    border: 1px solid #ebebeb;
+    padding: 15px;
+}
+
+
+.subtitulo{
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.precio-descuento{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+}
+
+.off{
+    margin-left: 20px;
+    padding-left: 10px;
+}
+
+.precio{
+    width: 30%;
+}
+
+.off{
+    width: 70%;
+    text-align: left;
+}
+
+.seccion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.buscador{
+    
+    width: 30%;
+    text-align: center;
+}
+
+
+/*Breakpoint de los media queries*/
+@media (min-width:361px){  /*smartphone*/
+    .datoArticulo{
+        display: none;
+    }
+    .navylog{
+        display: none;
+    }
+}
+
+@media (min-width:769px){ /*tablets*/
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+            }
+            .burger-menu{
+                display: none;
+            }    
+    .articulo {
+            /* flex: 1 1 45%; */
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 45%;
+        }
+    .navylog {       
+        display:flex;
+        justify-content:space-between;
+    }
+    .navegador{
+        display: flex;
+        
+    }
+    .loguin{
+        display: flex;
+    }
+    li{
+        list-style: none;
+        padding: 10px;
+    }
+}
+
+
+@media (min-width:996px){/*desktop*/
+    .articulo{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    /*.articulo {      
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 20%;
+    }*/
+    .seccion{
+        flex-wrap: nowrap;
+        /*flex-wrap: wrap;*/
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .parrafo{
+        width: 25%;
+        
+    }
+    .copy{
+        text-align: left;
+        margin-right: auto;
+    }
+    
+}
+
+
+
+
+
