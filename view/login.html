@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login de Usuario</title>
 </head>
 <body>
-    
+
+<h1>Login de Usuario</h1>
+
+<form id="loginForm" action="login.php" method="post">
+
+    <label for="usuario">Nombre de Usuario:</label><br>
+    <input type="text" id="usuario" name="usuario" required><br><br>
+
+    <label for="password">Contraseña:</label><br>
+    <input type="password" id="password" name="password" required><br><br>
+
+    <button type="submit">Enviar</button>
+
+</form>
+
 </body>
 </html>
