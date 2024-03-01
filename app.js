@@ -5,9 +5,8 @@ const app = express();
 
 app.use(express.static("public"));
 
-app.listen(3300, () => console.log("Servidor corriendo"));
 
-const port = process.env.PORT || 3033;
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
     console.log(`Servidor corriendo en puerto ${port}`);
 });
@@ -33,4 +32,7 @@ app.post("/registro.html", (req, res) => {
 	res.sendFile(path.resolve(__dirname, "./view/home.html"));
 });
 
-app.listen(3300, () => console.log("Servidor corriendo en servidor 3300"));
+app.listen(3300, () => {
+	console.log('Servidor corriendo en el puerto 3300');
+  });
+  
