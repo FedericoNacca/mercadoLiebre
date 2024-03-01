@@ -5,18 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/styleRegistro.css">
   <title>Registro de Usuario</title>
-  <link rel="stylesheet" href="/css/styleRegistro.css">
 </head>
 <body>
 
-<h1>Registro de Usuario</h1>
+  <h1>Registro de Usuario</h1>
 
-<form id="registerForm" action="" method="post">
+  <form id="registerForm" action="" method="post">
 
-    <label for="nombre">Nombre y Apellido:</label><br>
-    <input type="text" id="nombre" name="nombre" required ="name"><br><br>
 <div class="registro">
-    <form id="registerForm" action="submit_form.php" method="post">
+    <form id="registerForm" method="post">
       <div>
         <label for="nombre">Nombre y Apellido:</label><br>
         <input type="text" id="nombre" name="nombre" required><br><br>
@@ -43,15 +40,15 @@
     <label for="vender">Vender</label><br><br>
 
     <label for="categorias">Categorías de Interés:</label><br>
-    <input type="checkbox" id="electro" name="categorias[]" value="Electro">
+    <input type="checkbox" id="electro" name="categorias" value="Electro">
     <label for="electro">Electro</label><br>
-    <input type="checkbox" id="moda" name="categorias[]" value="Moda">
+    <input type="checkbox" id="moda" name="categorias" value="Moda">
     <label for="moda">Moda</label><br>
-    <input type="checkbox" id="hogar" name="categorias[]" value="Hogar">
+    <input type="checkbox" id="hogar" name="categorias" value="Hogar">
     <label for="hogar">Hogar</label><br>
-    <input type="checkbox" id="jugueteria" name="categorias[]" value="Juguetería">
+    <input type="checkbox" id="jugueteria" name="categorias" value="Juguetería">
     <label for="jugueteria">Juguetería</label><br>
-    <input type="checkbox" id="vidaSana" name="categorias[]" value="Vida Sana">
+    <input type="checkbox" id="vidaSana" name="categorias" value="Vida Sana">
     <label for="vidaSana">Vida Sana</label><br><br>
 
     <label for="foto">Foto de Usuario:</label><br>
@@ -66,8 +63,7 @@
     <button type="submit">Enviar</button>
     <button type="button" onclick="resetForm()">Borrar Datos</button>
 
-</form>
-
+  </form>
 </body>
 </html>
 
