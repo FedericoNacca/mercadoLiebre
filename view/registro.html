@@ -3,47 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/styleRegistro.css">
   <title>Registro de Usuario</title>
 </head>
 <body>
 
 <h1>Registro de Usuario</h1>
 
-<form id="registerForm" action="submit_form.php" method="post">
+<div class="registro">
+    <form id="registerForm" action="submit_form.php" method="post">
+      <div>
+        <label for="nombre">Nombre y Apellido:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+      </div>
 
-    <label for="nombre">Nombre y Apellido:</label><br>
-    <input type="text" id="nombre" name="nombre" required><br><br>
+      <div>
+        <label for="usuario">Nombre de Usuario:</label><br>
+        <input type="text" id="usuario" name="usuario" required><br><br>
+      </div>
+      
+      <div>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+      </div>
 
-    <label for="usuario">Nombre de Usuario:</label><br>
-    <input type="text" id="usuario" name="usuario" required><br><br>
+      <div>
+        <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
+        <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
+      </div>
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required><br><br>
-
-    <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
-    <input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br><br>
-
-    <label for="domicilio">Domicilio:</label><br>
-    <input type="text" id="domicilio" name="domicilio" required><br><br>
-
-    <label for="perfil">Perfil del Usuario:</label><br>
-    <input type="radio" id="comprar" name="perfil" value="comprar" required>
-    <label for="comprar">Comprar</label>
-    <input type="radio" id="vender" name="perfil" value="vender">
-    <label for="vender">Vender</label><br><br>
-
-    <label for="categorias">Categorías de Interés:</label><br>
-    <input type="checkbox" id="electro" name="categorias[]" value="Electro">
-    <label for="electro">Electro</label><br>
-    <input type="checkbox" id="moda" name="categorias[]" value="Moda">
-    <label for="moda">Moda</label><br>
-    <input type="checkbox" id="hogar" name="categorias[]" value="Hogar">
-    <label for="hogar">Hogar</label><br>
-    <input type="checkbox" id="jugueteria" name="categorias[]" value="Juguetería">
-    <label for="jugueteria">Juguetería</label><br>
-    <input type="checkbox" id="vidaSana" name="categorias[]" value="Vida Sana">
-    <label for="vidaSana">Vida Sana</label><br><br>
-
+      <div>
+        <label for="domicilio">Domicilio:</label><br>
+        <input type="text" id="domicilio" name="domicilio" required><br><br>
+      </div>
+      
+      <div>
+        <label for="perfil">Perfil del Usuario:</label><br>
+        <input type="radio" id="comprar" name="perfil" value="comprar" required>
+        <label for="comprar">Comprar</label>
+        <input type="radio" id="vender" name="perfil" value="vender">
+        <label for="vender">Vender</label><br><br>
+      </div>
+      
+      <div>
+        <label for="categorias">Categorías de Interés:</label><br>
+        <input type="checkbox" id="electro" name="categorias" value="Electro">
+        <label for="electro">Electro</label><br>
+        <input type="checkbox" id="moda" name="categorias" value="Moda">
+        <label for="moda">Moda</label><br>
+        <input type="checkbox" id="hogar" name="categorias" value="Hogar">
+        <label for="hogar">Hogar</label><br>
+        <input type="checkbox" id="jugueteria" name="categorias" value="Juguetería">
+        <label for="jugueteria">Juguetería</label><br>
+        <input type="checkbox" id="vidaSana" name="categorias" value="Vida Sana">
+        <label for="vidaSana">Vida Sana</label><br><br>
+      </div>
     <label for="foto">Foto de Usuario:</label><br>
     <input type="file" id="foto" name="foto" accept="image/*" required><br><br>
 
@@ -55,6 +69,7 @@
 
     <button type="submit">Enviar</button>
     <button type="button" onclick="resetForm()">Borrar Datos</button>
+  </div>
 
 </form>
 

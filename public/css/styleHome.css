@@ -209,6 +209,12 @@ section article .datosDelArticulo { /*Haciendo los datos*/
     
 }
 
+.registro{
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
 

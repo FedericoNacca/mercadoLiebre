@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styleLogin.css">
     <title>Login de Usuario</title>
 </head>
 <body>
@@ -12,12 +13,16 @@
 <form id="loginForm" action="login.php" method="post">
 
     <label for="usuario">Nombre de Usuario:</label><br>
-    <input type="text" id="usuario" name="usuario" required><br><br>
+    <input type="text" id="usuario" name="usuario" required><br>
+    <span id="errorUsuario" class="error"></span><br>
 
     <label for="password">Contraseña:</label><br>
-    <input type="password" id="password" name="password" required><br><br>
+    <input type="password" id="password" name="password" required><br>
+    <span id="errorUsuario" class="error"></span><br><br>
 
-    <button type="submit">Enviar</button>
+    <button type="submit">Enviar</button> 
+    <p></p>
+    <a href="/"> <button type="button"> Volver </button> </a>
 
 </form>
 
