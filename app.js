@@ -33,3 +33,4 @@ app.post("/registro.html", (req, res) => {
 	res.sendFile(path.resolve(__dirname, "./view/home.html"));
 });
 
+app.listen(3300, () => console.log("Servidor corriendo en servidor 3300"));
